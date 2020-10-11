@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap');
+
 /********** RESETAR PAGINA **********/
 * {
   padding: 0;
@@ -133,6 +135,12 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.5);
   }
 
+  .carousel-caption h1 {
+    height: 200px;
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 50px;
+  }
 
 /* Fim Carrocel */
 
@@ -389,6 +397,12 @@ footer .rodape h2 {
   margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: bold;
+  font-family: 'cursive';
+  font-size: 40px;
+}
+
+.faixa-horizontal p {
+  text-align: justify;
 }
 
 .faixa-horizontal-img {
@@ -441,6 +455,21 @@ footer .rodape h2 {
 
       .faixa-horizontal {
         margin-bottom: 150px;
+        }
+
+        .carousel-inner h1 {
+          font-size: 26px;
+        }
+
+        .horizontal02 h2,  
+        .container-post  h2,
+        .faixa-horizontal h2 {
+          font-size: 26px;
+          text-align: center;
+        }
+
+        .blog-post-info .blog-post-cta {
+          font-size: 12px;
         }
     }
   
@@ -678,9 +707,9 @@ footer .rodape h2 {
 .sobre-banner h1 {
   color: #fff;
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
   padding: 90px 0;
-  font-family: 'Niconne', cursive;
+  font-family: 'Sansita Swashed', cursive;
 }
 
 .sobre-titulo {
@@ -692,7 +721,7 @@ footer .rodape h2 {
   display: grid;
   grid-template-columns: 400px auto;
   grid-gap: 10px;
-  padding: 50px 50px;
+  padding: 50px 80px;
   margin-bottom: 70px;
 }
 
@@ -727,6 +756,19 @@ footer .rodape h2 {
 }
 
   @media (max-width: 800px) {
+
+  .sobre-banner{
+    background-image: url('../img/sobre-banner.png');
+    background-size: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .sobre-banner h1{
+    padding-top: 40px;
+}
+
     .grid-sobre {
       display: grid;
       grid-template-columns: 230px auto;
@@ -746,6 +788,11 @@ footer .rodape h2 {
   .grid-sobre .sobre-img img {
     width: 100%;
     margin-bottom: 40px;
+  }
+
+  .sobre-banner h1{
+    padding-top: 40px;
+    font-size: 50px;
   }
 
   .sobre-texto {
@@ -778,9 +825,9 @@ footer .rodape h2 {
 .servicos-banner h1 {
   color: #fff;
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
   padding: 90px 0;
-  font-family: 'Niconne', cursive;
+  font-family: 'Sansita Swashed', cursive;
 }
 
 .linha-divisor {
@@ -814,13 +861,14 @@ footer .rodape h2 {
 .servicos-texto01,
 .servicos-texto03 {
   padding-left: 40px;
-  font-size: 20px;
+  font-size: 18px;
+  text-align: justify;
 }
 
 .servicos-texto02 {
   padding-right: 40px;
-  justify-content: center;
-  font-size: 20px;
+  text-align: justify;
+  font-size: 18px;
 }
 
 .servicos-texto01 h2,
@@ -830,27 +878,180 @@ footer .rodape h2 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+@media (max-width: 700px) {
+  .servicos-banner{
+    background-image: url('../img/servico-banner.png');
+    background-size: 100%;
+    height: 150px;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.servicos-banner h1{
+  padding-top: 40px;
+  font-size: 50px;
+}
+
+  .servicos01,
+  .servicos02,
+  .servicos03 {
+    display: flex;
+  }
+  .servicos-conteudo{
+    align-items: center;
+  }
+
+  .linha-divisor {
+    margin: 20px 60px;
+  }
+
+   .servicos01 .img01-servicos{
+    width: 400px;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+
+   .servicos02 .img02-servicos {
+   width: 400px;
+   height: 350px;
+   margin-bottom: 20px;
+ }
+
+ .servicos03 .img03-servicos{
+  width: 400px;
+  height: 350px;
+}
+
+  .servicos-texto01,
+  .servicos-texto03 {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.servicos-texto02 {
+padding-right: 0;
+font-size: 16px;
+}
+
+.servicos-texto03 {
+padding-left: 20px;
+font-size: 16px;
+margin-top: 20px;
+}
+  
+}
+
+@media (max-width: 799px) {
+  .servicos-banner{
+    background-image: url('../img/servico-banner.png');
+    background-size: 100%;
+    height: 150px;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.servicos-banner h1{
+  padding-top: 40px;
+}
+
+
+  .servicos01,
+  .servicos02,
+  .servicos03 {
+    display: flex;
+  }
+  .servicos-conteudo{
+    align-items: center;
+  }
+
+  .linha-divisor {
+    margin: 20px 60px;
+  }
+
+   .servicos01 .img01-servicos{
+    width: 400px;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+
+   .servicos02 .img02-servicos {
+   width: 400px;
+   height: 350px;
+   margin-bottom: 20px;
+ }
+
+ .servicos03 .img03-servicos{
+  width: 400px;
+  height: 350px;
+}
+
+  .servicos-texto01,
+  .servicos-texto03 {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.servicos-texto02 {
+padding-right: 0;
+font-size: 16px;
+}
+
+.servicos-texto03 {
+padding-left: 20px;
+font-size: 16px;
+margin-top: 20px;
+}
+  
+}
+
 @media (max-width: 800px) {
+
+.servicos-banner{
+  background-image: url('../img/servico-banner.png');
+  background-size: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.servicos-banner h1{
+  padding-top: 40px;
+}
+
 
   .servicos01,
   .servicos02,
   .servicos03 {
     flex-direction: column;
   }
-  .servicos-conteudo{
-    align-items: center;
-  }
-  
+
+  .servicos01 .img01-servicos,
+  .servicos02 .img02-servicos,
+  .servicos03 .img03-servicos{
+   width: 400px;
+   height: 350px;
+   margin-bottom: 20px;
+ }
+
+ .servicos01 .img01-servicos,
+ .servicos02 .img02-servicos,
+ .servicos03 .img03-servicos{
+  width: 400px;
+  height: 350px;
+  margin-bottom: 20px;
 }
 
-@media (max-width: 920px) {
-
-  .servicos01 img,
-  .servicos02 img,
-  .servicos03 img {
-    width: 80%;
-    height: 80%;
+ .servicos-texto01,
+.servicos-texto03 {
+ padding-left: 0;
+ font-size: 16px;
 }
+
+.servicos-texto02 {
+padding-left: 0;
+font-size: 16px;
+}
+
 }
 
 
@@ -955,9 +1156,9 @@ footer .rodape h2 {
 .galeria-banner h1 {
   color: #fff;
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
   padding: 90px 0;
-  font-family: 'Niconne', cursive;
+  font-family: 'Sansita Swashed', cursive; /* font-family: 'Niconne', cursive;*/
 }
 
 .galeria-titulo {
@@ -1038,7 +1239,37 @@ footer .rodape h2 {
 	}
 }
 
+
+@media (max-width: 800px) {
+  .galeria-banner{
+    background-image: url('../img/galeria-banner.png');
+    background-size: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .galeria-banner h1{
+    padding-top: 40px;
+  }
+
+}
+
 @media screen and (max-width:700px){
+
+.galeria-banner{
+  background-image: url('../img/galeria-banner.png');
+  background-size: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.galeria-banner h1{
+  padding-top: 40px;
+  font-size: 50px;
+}
+
 	.contenedor-imagenes {
 		width: 90%;
 	}
@@ -1048,6 +1279,20 @@ footer .rodape h2 {
 }
 
 @media screen and (max-width:450px){
+
+  .galeria-banner{
+    background-image: url('../img/galeria-banner.png');
+    background-size: 100%;
+    height: 150px;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.galeria-banner h1{
+  padding-top: 40px;
+  font-size: 40px;
+}
+
 	h1 {
 		font-size:22px;
 	}
@@ -1065,6 +1310,7 @@ footer .rodape h2 {
 
 /********** INICIO MENU CONTATO **********/
 
+
 .contato-banner {
   background-image: url(../img/contato-banner.png);
   background-repeat: no-repeat;
@@ -1074,6 +1320,7 @@ footer .rodape h2 {
   object-fit: cover;
 }
 
+
 .contato-banner img{
   width: 100%;
 }
@@ -1081,9 +1328,9 @@ footer .rodape h2 {
 .contato-banner h1 {
   color: #fff;
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
   padding: 90px 0;
-  font-family: 'Niconne', cursive;
+  font-family: 'Sansita Swashed', cursive;
 }
 
 .contato {
@@ -1102,7 +1349,12 @@ footer .rodape h2 {
 /*    box-shadow: 0 -130px 180px 150px rgba(255, 255, 0, 0.6); */
 
 .conteudo-contato h1 {
-  text-align: center
+  text-align: center;
+}
+
+.section-heading{
+  text-align: center;
+  font-family: 'Sansita Swashed', cursive;
 }
 
 .conteudo-contato p {
@@ -1129,7 +1381,7 @@ footer .rodape h2 {
   margin-bottom: 50px;
 }
 
-.redesocial {
+.redesocial01 {
   overflow: hidden;
   box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
   background-color: white;
@@ -1138,7 +1390,18 @@ footer .rodape h2 {
   position: relative;
   width: 280px;
   margin-bottom: 1rem;
-  margin-left: 1rem;
+}
+
+.redesocial02 {
+  overflow: hidden;
+  box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+  background-color: white;
+  text-align: center;
+  border-radius: 1rem;
+  position: relative;
+  width: 280px;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
 }
 
 .bannersocial-img01 {
@@ -1343,6 +1606,47 @@ footer .rodape h2 {
 }
 
 
+@media (max-width: 700px) {
+  .contato-banner{
+      background-image: url('../img/contato-banner.png');
+      background-size: 100%;
+      height: 150px;
+background-repeat: no-repeat;
+background-size: cover;
+  }
+
+  .contato-banner h1{
+    padding-top: 40px;
+    font-size: 50px;
+}
+
+.redesocial02 {
+  margin-right: 0.5rem;
+}
+}
+
+@media (max-width: 800px) {
+  .contato-banner{
+      background-image: url('../img/contato-banner.png');
+      background-size: 100%;
+      height: 150px;
+background-repeat: no-repeat;
+background-size: cover;
+  }
+
+  .contato-banner h1{
+    padding-top: 40px;
+}
+
+
+
+.redesocial01 {
+  margin-left: 20px;
+}
+
+}
+
+
 @media (max-width: 991px) {
   .contato {
     padding: 50px;
@@ -1360,6 +1664,7 @@ footer .rodape h2 {
   .formulario-contato {
     width: 100%;
   }
+  
 }
 
 .mapa {
